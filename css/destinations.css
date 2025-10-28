@@ -14,11 +14,12 @@
   background-size: cover;
 }
 .destinations .item.osaka .img-item {
+  margin-top: 40px;
   background: url(../img/osaka-mobile.jpg);
   background-size: cover;
 }
 
-.destinations .item header h3 {
+.destinations .item header h4 {
   margin: 24px 0;
 }
 .destinations .item p {
@@ -26,7 +27,6 @@
 }
 .destinations .button {
   width: 100%;
-  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
