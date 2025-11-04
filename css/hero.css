@@ -82,11 +82,53 @@
   border: none;
   margin: 16px 0 32px;
 }
+
 .blog .hero-content p {
   font-size: 20px;
   color: var(--text-secondary-color);
   font-weight: var(--text-weight);
   line-height: 32px;
+}
+
+.contact .hero-img {
+  height: 460px;
+  background: url(../img/contatos/hero-contatos-mobile.png) no-repeat;
+  background-size: cover;
+  margin-bottom: 88px;
+}
+
+.contact .hero-content {
+  padding: 65px 24px;
+  width: 360px;
+}
+.contact .hero-content h1 {
+  font-size: 48px;
+  color: var(--text-secondary-color);
+  font-weight: var(--title-weight);
+}
+.contact .hero-content hr {
+  width: 180px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  border: none;
+  margin: 16px 0 32px;
+}
+.contact .hero-content p {
+  font-size: 20px;
+  color: var(--text-secondary-color);
+  font-weight: var(--text-weight);
+  line-height: 32px;
+}
+.contact .contact-text {
+  text-align: center;
+  color: var(--text-primary-color);
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.contact .bottom-hero .hero-img {
+  background: url(../img/contatos/contatos-rodape-mobile.jpg) no-repeat;
+  background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
@@ -140,6 +182,36 @@
     background-size: cover;
     height: 620px;
   }
+
+  .contact .hero-img {
+    background: url(../img/contatos/hero-contatos-tablet.jpg) no-repeat;
+    background-size: cover;
+    height: 620px;
+  }
+
+  .contact .hero-content {
+    padding: 210px 70px 107px;
+  }
+
+  .contact .hero-content p {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .contact .hero-content {
+    width: 579px;
+  }
+
+  .contact .contact-text {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .contact .bottom-hero .hero-img {
+    background: url(../img/contatos/contatos-rodape-tablet.jpg) no-repeat;
+    background-size: cover;
+    height: 400px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -184,6 +256,16 @@
   }
   .blog .hero-img {
     background: url(../img/blog/blog-hero-desktop.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .contact .hero-img {
+    background: url(../img/contatos/hero-contatos-desktop.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .contact .bottom-hero .hero-img {
+    background: url(../img/contatos/contatos-rodape-desktop.jpg) no-repeat;
     background-size: cover;
   }
 }
