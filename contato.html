@@ -79,56 +79,67 @@
       <div class="section-title">
         <h2>Preencha o formulário:</h2>
         <hr />
-        <p class="contact-text">
-          Temos uma equipe sempre em prontidão para resolver suas dúvidas,
-          problemas, trazer dicas e orientações objetivas para tornar sua
-          experiência o mais prazerosa e tranquila possível. Preencha seus dados
-          que vamos retornar seu contato conforme a urgência do seu chamado.
-          Pode confiar!
-        </p>
       </div>
+      <p class="contact-text">
+        Temos uma equipe sempre em prontidão para resolver suas dúvidas,
+        problemas, trazer dicas e orientações objetivas para tornar sua
+        experiência o mais prazerosa e tranquila possível. Preencha seus dados
+        que vamos retornar seu contato conforme a urgência do seu chamado. Pode
+        confiar!
+      </p>
+      <form
+        class="contact subject-form"
+        action="/processar-dados"
+        method="post"
+      >
+        <div class="field">
+          <input
+            id="name"
+            type="text"
+            name="userName"
+            placeholder="Seu nome"
+            required
+          />
+        </div>
+        <div class="field personal-contact">
+          <input
+            id="phoneNumber"
+            type="tel"
+            name="userPhoneNumber"
+            pattern="[0-9]{11}"
+            placeholder="Telefone"
+            aria-describedby="phoneHelp"
+            required
+          />
+          <input
+            id="email"
+            type="email"
+            name="userEmail"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="field">
+          <input
+            id="subject"
+            type="text"
+            name="userSubject"
+            placeholder="Assunto"
+            required
+          />
+        </div>
+        <div class="field">
+          <label for="comment">Assunto</label>
+          <textarea
+            id="comment"
+            name="userComment"
+          ></textarea>
+        </div>
+        <button type="submit">Enviar!</button>
+      </form>
     </section>
-    <form class="contact subject-form">
-      <input
-        id="name"
-        type="text"
-        name="userName"
-        placeholder="Seu nome"
-        required
-      />
-      <br />
-      <input
-        id="phoneNumber"
-        type="tel"
-        name="userPhoneNumber"
-        pattern="[0-9]{11}"
-        placeholder="Telefone"
-        aria-describedby="phoneHelp"
-        required
-      />
-      <br />
-      <input
-        id="email"
-        type="email"
-        name="userEmail"
-        placeholder="Email"
-        required
-      /><br />
-      <input
-        id="subject"
-        type="text"
-        name="userSubject"
-        placeholder="Assunto"
-        required
-      /><br />
-      <textarea
-        id="comment"
-        name="userComment"
-        placeholder="Assunto "
-      ></textarea>
-    </form>
     <section class="contact bottom-hero">
-      <div class="hero-img"></div>
+      <div class="bottom-img"></div>
     </section>
     <footer class="main-footer">
       <div class="footer-content">
