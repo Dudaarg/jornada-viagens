@@ -19,8 +19,11 @@
   height: 40px;
   font-size: 20px;
   border: transparent;
-  border-bottom: 1px solid var(--form-color);
+  border-bottom: 2px solid var(--form-color);
   outline: none;
+}
+.contact .field input:hover {
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .contact label,
@@ -31,7 +34,6 @@ textarea {
   height: 80px;
   font-size: 20px;
   border-radius: 10px;
-  border-color: var(--form-color);
 }
 
 .contact button {
@@ -80,7 +82,7 @@ textarea {
 
 @media screen and (min-width: 1024px) {
   .contact .subject-form {
-    align-items: center;
+    margin-left: 80px;
   }
 
   .contact .personal-contact {
@@ -96,11 +98,21 @@ textarea {
   }
 
   .contact label {
-    display: flex;
-    height: 40px;
+    display: block;
+    height: 20px;
+    width: 790px;
   }
 
-  .contact .textarea {
-    width: 970px;
+  .contact textarea {
+    width: 790px;
+    height: 90px;
+  }
+
+  .contact button {
+    margin: 32px 265px 0 245px;
+  }
+
+  .contact button:hover {
+    background-color: var(--primary-color);
   }
 }
