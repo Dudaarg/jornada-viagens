@@ -29,10 +29,11 @@
 .contact label,
 textarea {
   margin-top: 16px;
-  color: var(--form-color);
+  color: var(--form-color-darker);
   width: 312px;
   height: 80px;
   font-size: 20px;
+  font-weight: var(--menu-text-weight);
   border-radius: 10px;
 }
 
